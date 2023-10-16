@@ -36,7 +36,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1166px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -91,6 +91,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 18px 0;
 }
 
 .page-header .container {
@@ -112,11 +113,25 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   display: inline-flex;
-  margin-right: 76px;
+  margin-right: 149px;
 }
 .studio {
   color: #2e2f42;
 }
+
+.burger-menu {
+  border: none;
+  background-color: #fff;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.burger-menu .icon {
+  fill: #2f2f37;
+  padding-top: 4px;
+}
+
 .menu {
   display: flex;
   gap: 40px;
@@ -152,7 +167,6 @@ img {
   color: #404bbf;
 }
 
-/*contacts*/
 .address {
   font-style: normal;
   margin-left: auto;
@@ -176,20 +190,30 @@ img {
   color: #404bbf;
 }
 
-/*main block*/
-/*hero screen*/
-
 .hero-screen {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/bcgd-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 72px 0;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bcgd-mob-2x.jpg);
+  }
 }
 
 .hero-screen .container,
@@ -201,7 +225,7 @@ img {
 }
 
 .title {
-  max-width: 288px;
+  max-width: 200px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -210,6 +234,7 @@ img {
   color: #fff;
   margin-bottom: 72px;
 }
+
 .hero-button {
   display: block;
   min-width: 169px;
@@ -250,7 +275,7 @@ img {
 }*/
 
 .features-icon-container {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
