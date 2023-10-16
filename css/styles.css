@@ -97,11 +97,14 @@ img {
 .page-header .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+
 .nav-bar {
   display: flex;
   align-items: center;
 }
+
 /*logo*/
 .logo-header {
   font-family: Raleway, sans-serif;
@@ -113,7 +116,6 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   display: inline-flex;
-  margin-right: 149px;
 }
 .studio {
   color: #2e2f42;
@@ -124,11 +126,11 @@ img {
   background-color: #fff;
   width: 24px;
   height: 24px;
+  margin-left: 149px;
 }
 
 .burger-menu .icon {
   fill: #2f2f37;
-  padding-top: 4px;
 }
 
 .mob-menu {
