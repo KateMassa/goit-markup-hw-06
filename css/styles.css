@@ -245,13 +245,6 @@ img {
   color: #404bbf;
 }
 
-/*.contacts {
-  display: none;
-  justify-content: end;
-  gap: 40px;
-}
-*/
-
 .contacts-item:hover,
 .contacts-item:focus,
 .mob-menu-contacts-item:hover,
@@ -880,7 +873,7 @@ footer .social-media-icon .social-media-link:focus {
 
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 288px;
+    max-width: 320px;
   }
 
   .menu {
@@ -894,7 +887,7 @@ footer .social-media-icon .social-media-link:focus {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
     display: flex;
     padding: 0;
   }
@@ -922,13 +915,13 @@ footer .social-media-icon .social-media-link:focus {
   .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     padding: 0;
     gap: 12px;
   }
 
   .contacts-item {
-    display: block;
+    display: flex;
     color: #434455;
     font-size: 12px;
     font-weight: 400;
@@ -963,6 +956,8 @@ footer .social-media-icon .social-media-link:focus {
     justify-content: center;
     row-gap: 72px;
     column-gap: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .features-card,
@@ -1039,20 +1034,99 @@ footer .social-media-icon .social-media-link:focus {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
+  .team,
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .page-header .container {
+    display: flex;
+    flex-direction: row;
+  }
   .contacts {
     flex-direction: row;
+    justify-content: end;
     gap: 40px;
   }
 
+  .contacts-item {
+    line-height: 1.5;
+  }
+
   .hero-screen {
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
     padding: 188px 0;
+  }
+
+  .title {
+    margin-bottom: 48px;
+  }
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-card {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-icon-container {
+    display: flex;
+  }
+
+  .features-card-heading {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .features-card-text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  .team .container {
+    padding: 120px 0;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
+  }
+
+  footer {
+    display: flex;
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    flex-wrap: nowrap;
+    align-items: first baseline;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .footer-text {
+    margin-right: 120px;
+    padding: 0;
+  }
+  .footer-subscribe {
+    margin-left: 80px;
   }
 }
