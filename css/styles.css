@@ -40,6 +40,7 @@ img {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
+  align-items: center;
 }
 
 ::after {
@@ -91,11 +92,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
-  padding: 16px 16px;
-}
-
-.page-header .container {
-  padding: 0;
 }
 
 .nav-bar {
@@ -221,6 +217,7 @@ img {
   text-decoration: none;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  display: block;
 }
 
 .menu > li > .link-studio {
@@ -876,6 +873,10 @@ footer .social-media-icon .social-media-link:focus {
     max-width: 320px;
   }
 
+  .page-header {
+    padding: 16px 16px;
+  }
+
   .menu {
     display: none;
   }
@@ -899,6 +900,10 @@ footer .social-media-icon .social-media-link:focus {
   .menu {
     display: flex;
     gap: 40px;
+  }
+
+  .page-header {
+    padding: 0;
   }
 
   .logo-header {
@@ -1051,15 +1056,15 @@ footer .social-media-icon .social-media-link:focus {
     padding-right: 15px;
   }
 
-  .team,
-  .portfolio {
-    padding: 120px 0;
-  }
-
   .page-header .container {
     display: flex;
     flex-direction: row;
   }
+
+  .nav-bar {
+    margin: 0 auto;
+  }
+
   .contacts {
     flex-direction: row;
     justify-content: end;
@@ -1067,6 +1072,8 @@ footer .social-media-icon .social-media-link:focus {
   }
 
   .contacts-item {
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
   }
 
