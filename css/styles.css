@@ -881,6 +881,10 @@ footer .social-media-icon .social-media-link:focus {
     display: none;
   }
 
+  .address {
+    font-style: normal;
+  }
+
   .contacts {
     display: none;
   }
