@@ -504,11 +504,15 @@
           <ul class="portfolio-list">
             <li class="portfolio-card">
               <div class="port-img">
-                <img
-                  srcset="./images/bankingapp.jpg 1x, ./images/bankapp2x.jpg 2x"
-                  src="./images/bankingapp.jpg"
-                  alt="bankingapp"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/bankingapp.jpg 1x,
+                      ./images/bankapp2x.jpg  2x
+                    "
+                  />
+                </picture>
+                <img src="./images/bankingapp.jpg" alt="bankingapp" />
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
